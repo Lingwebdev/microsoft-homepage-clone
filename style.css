@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgba(0, 0, 255, 0.141); */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+i {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #0067b8;
+    color: #fff;
+    border-radius: 2px;
+    padding: .7rem .7rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 60px;
+  font-size: 13px;
+}
+
+.navbar .brand {
+  width: 140px;
+  cursor: pointer; 
+}
+
+.navbar nav {
+  flex-grow: 1;
+}
+
+.navbar .main-nav {
+  display: flex;
+  margin-left: 30px;
+}
+
+.main-nav li {
+    padding: 20px 20px 20px 0;
+}
+
+.main-nav li a, .all-microsoft {
+    padding-bottom: 2px;
+}
+
+.main-nav li a:hover, .all-microsoft:hover {
+    border-bottom: 2px solid #000;
+}
+
+.navbar .right-nav {
+  display: flex;
+}
+
+.navbar .right-nav li {
+    margin-left: 20px;
+}
+
+.right-nav li:first-child i {
+    font-size: x-small;
+    margin-left: 2px;
+    color: #262626;
+}
+
+.menu i {
+    position: absolute;
+    left: 20px;
+    top: 20px; 
+    font-size: 22px;
+    color:#262626;
+    cursor: pointer;
+}
+
+.hero {
+    background: url(./assets/Highlight-Laptop.avif) no-repeat center center/cover;
+    width: 99%;
+    height: 600px;
+    margin: auto;
+    padding: 0 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.spring-sale {
+    background-color: #9bf00b;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+
+.hero .hero-text {
+    margin: 1.1rem 0 1.1rem 0;
+    font-size: 1.1rem;
+}
+
+.hero .btn-secondary {
+    color: #0067b8;
+    margin-left: 20px;
+}
+
+.hero .btn-secondary i {
+  font-size: 0.9rem;
+  padding-left: 5px;
+}
+.hero .btn-secondary:hover i{
+  margin-left: 5px;
+}
