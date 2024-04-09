@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid rgba(0, 0, 255, 0.141); */
+  border: 1px solid rgba(0, 0, 255, 0.141);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
   margin: auto;
 }
@@ -64,7 +64,7 @@ i {
 
 .navbar .main-nav {
   display: flex;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .main-nav li {
@@ -103,8 +103,8 @@ i {
 }
 
 .hero {
-    background: url(./assets/Highlight-Laptop.avif) no-repeat center center/cover;
-    width: 99%;
+    position: relative;
+    width: 100%;
     height: 600px;
     margin: auto;
     padding: 0 13%;
@@ -112,6 +112,16 @@ i {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  margin: 0 5px;
 }
 
 .spring-sale {
@@ -144,4 +154,157 @@ i {
 }
 .hero .btn-secondary:hover i{
   margin-left: 5px;
+}
+
+.carousel {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.carousel img {
+  object-fit: cover;
+}
+
+.carousel .hero {
+  display: none;
+}
+
+.animation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation li {
+  display: inline-block;
+}
+
+.animation li {
+  cursor: pointer;
+  padding: 0 15px;
+  margin: 0 3px;
+}
+
+.animation .circle i {
+  font-size: .7rem;
+}
+
+.animation {
+  position: absolute;
+  bottom: 50px;
+  left: 43%;
+}
+
+.animation .left-arrow i, .right-arrow i {
+  font-weight: 500;
+  transition: padding ease-in-out 0.1s;
+}
+
+.animation .filled-pause {
+  display: none;
+}
+
+.animation .play {
+  display: none;
+}
+
+.circle.active i{
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.shopping-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 40px 40px 40px;
+  flex-wrap: wrap;
+}
+
+.shopping-links img {
+  width: 40px;
+}
+
+.shopping-links div {
+  text-align: center;
+}
+
+.shopping-links a {
+  color:#0067b8;
+  text-decoration: underline;
+  display: block;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  align-content: center;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+  grid-auto-rows: minmax(400px, auto);
+  width: 100%;
+}
+.card {
+  box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13), 0 .0625rem .125rem 0 rgba(0,0,0,.11);
+  border-radius: 5px;
+}
+.cards img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+.cards .spring-sale{
+  width: fit-content;
+}
+.cards h2{
+  font-weight: 500;
+}
+.cards .card div {
+  height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card div p.description{
+  flex-grow: 1;
+  margin-top: 15px;
+}
+
+.xbox{
+  position: relative;
+  width: 100%;
+  height: 460px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-items: center;
+  margin: 3rem 0 5rem 0;
+}
+.xbox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.xbox div{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.xbox p{
+  margin: 1.5rem 0;
+}
+.xbox h2{
+  font-size: 2rem;
+  font-weight: 500;
+  word-spacing: 5px;
+}
+.xbox a{
+  font-size: 1rem;
 }

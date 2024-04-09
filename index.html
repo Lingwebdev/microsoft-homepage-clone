@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="script.js" defer></script>
     <title>Microsoft clone</title>
@@ -30,8 +39,13 @@
         </nav>
         <div>
           <ul class="right-nav">
-            <li><span class="all-microsoft">AllMicrosoft</span> <i class="fa-solid fa-less-than fa-rotate-270"></i></li>
-            <li><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></li>
+            <li>
+              <span class="all-microsoft">AllMicrosoft</span>
+              <i class="fa-solid fa-less-than fa-rotate-270"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+            </li>
             <li><i class="fa-solid fa-cart-shopping"></i></li>
             <li><i class="fa-solid fa-user"></i></li>
           </ul>
@@ -39,25 +53,125 @@
         <div class="menu"><i class="fa-solid fa-bars"></i></div>
       </section>
     </div>
-    <section class="hero">
+    <div class="carousel">
+      <div class="hero">
+        <img src="./assets/Highlight-Laptop.avif" alt="Highlight laptop" />
         <p class="spring-sale">Spring Sale</p>
-        <h1>Save up to £470 on <br /> Surface Laptop Studio 2</h1>
+        <h1>
+          Save up to £470 on <br />
+          Surface Laptop Studio 2
+        </h1>
         <p class="hero-text">
-          Cutting-edge design meets incredible <br /> performance in this versatile
-          laptop perfect for <br /> everything from creativity to entertainment.
+          Cutting-edge design meets incredible <br />
+          performance in this versatile laptop perfect for <br />
+          everything from creativity to entertainment.
         </p>
         <div>
           <a href="#" class="btn">Shop Surface Laptop Studio 2</a>
-          <a href="#" class="btn-secondary">Shop all deals <i class="fa-solid fa-greater-than"></i></a>
+          <a href="#" class="btn-secondary"
+            >Shop all deals <i class="fa-solid fa-greater-than"></i
+          ></a>
         </div>
-    </section>
-    <div class="animation">
-      <ul>
-        <li class="pause"> </li>
-        <li class="left-arrow"></li>
-        <li class="circle"></li>
-        <li class="right-arrow"></li>
-      </ul>
+      </div>
+      <div class="hero">
+        <img src="./assets/Highlight-Copilot.avif" alt="Highlight copilot" />
+        <h1>
+          Unlock your potential with <br />
+          Microsoft Copilot
+        </h1>
+        <p class="hero-text">
+          Get things done faster and unleash your creativity with <br />
+          the power of AI anywhere you go.
+        </p>
+        <div>
+          <a href="#" class="btn">Download the Copilot app</a>
+        </div>
+      </div>
+      <div class="animation">
+        <ul>
+          <li class="pause" onclick="pauseSlide(currentSlide)"><i class="fa-regular fa-circle-pause"></i></li>
+          <li class="filled-pause"><i class="fa-solid fa-circle-pause"></i></li>
+          <li class="play onclick="playSlide(currentSlide)"><i class="fa-solid fa-circle-play"></i></li>
+          <li class="left-arrow" onclick="shiftSlide(-1)"><i class="fa-solid fa-less-than"></i></li>
+          <li class="circle" ><i class="fa-regular fa-circle"></i></li> 
+          <li class="circle"><i class="fa-regular fa-circle"></i></li> 
+          <li class="right-arrow" onclick="shiftSlide(1)"><i class="fa-solid fa-greater-than"></i></li>
+        </ul>
+      </div>
     </div>
+    <div class="container">
+      <div class="shopping-links">
+        <div>
+          <img src="./assets/Link-Icons-1.svg" alt="surface">
+          <a href="#">Shop for Surface device</a>
+        </div>
+        <div>
+          <img src="./assets/Link-Icons-2.svg" alt="xbox">
+          <a href="#">Shop Xbox games and consoles</a>
+        </div>
+        <div>
+          <img src="./assets/Link-Icons-3.svg" alt="ms365">
+          <a href="#">Shop for Surface device</a>
+        </div>
+        <div>
+          <img src="./assets/Link-Icons-4.webp" alt="students">
+          <a href="#">Shop for Surface device</a>
+        </div>
+        <div>
+          <img src="./assets/Link-Icons-5.svg" alt="accessories">
+          <a href="#">Shop for Surface device</a>
+        </div>
+        <div>
+          <img src="./assets/Link-Icons-6.svg" alt="business">
+          <a href="#">Shop for Surface device</a>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/Card-Laptop.jpeg" alt="laptop">
+          <div>
+            <p class="spring-sale">Sping Sale</p>
+            <h2>Save up to £100 on Surface Laptop Go 3</h2>
+            <p class="description">An ultraportable, everyday laptop with the performance and battery life you need to get it all done.</p>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/Card-Pro-7-Laptop.avif" alt="Pro7">
+          <div>
+            <h2>Microsoft Certified Refurbished</h2>
+            <p class="description">The Microsoft Certified Refurbished programme offers the opportunity to buy a pre-owned device at a discounted price.</p>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/Card-Microsoft-365.avif" alt="ms365">
+          <div>
+            <h2>Maximise the everyday with Microsoft 365</h2>
+            <p class="description">Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.</p>
+            <a href="#" class="btn">Choose your Microsoft 365 plan</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/Card-Xbox.avif" alt="xbox">
+          <div>
+            <h2>Save up to 80% on select Xbox digital games</h2>
+            <p class="description">Boost your gaming excitement with amazing deals on a wide range of Xbox games. Hurry - offer ends on 18th April.</p>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+        </div>
+      </div>
+      <div class="xbox">
+        <img src="./assets/Highlight-Xbox.avif" alt="xbox">
+        <div>
+          <h2>Xbox Series X</h2>
+          <p>The fastest, most powerful Xbox ever</p>
+          <a href="#" class="btn">Shop Xbox Series X</a>
+        </div>
+      </div>
+
+    </div>
+
+
   </body>
 </html>
