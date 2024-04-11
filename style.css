@@ -10,6 +10,7 @@ body {
   color: #000;
   font-size: 16px;
   line-height: 1.5;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -92,18 +93,19 @@ i {
     color: #262626;
 }
 
-.menu i {
+.menu {
     position: absolute;
     right: 20px;
-    top: 20px; 
+    top: 10px; 
     font-size: 2rem;
     color:#262626;
     cursor: pointer;
+    display: none;
+    z-index: 10;
 }
 
 .carousel {
   position: relative;
-  display: flex;
   width: 98vw;
   height: 600px;
   margin:0 auto;
@@ -114,20 +116,14 @@ i {
 .slided-images {
   width: 100%;
   height: 100%;  
-  flex-grow: 0;
-  flex-shrink: 0;
+  transition:transform 1s ease;
 }
 
 .slided-images img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: 1s ease;
 }
-
-/* .slided-images img {
- translate: -100%;
-} */
 
 .txt-part {
   position: absolute;
@@ -342,4 +338,59 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+  .menu{
+    display: block;
+    color: #000;
+  }
+  
+  .navbar .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    margin-left: 0;
+    transform: translate(-100%);
+    transition: transform 1s ease-in-out;
+  }
+
+  .navbar .main-nav.active {
+    transform: translate(0%);
+  }
+
+  .navbar .main-nav a {
+    color: #000;
+  }
+
+  .right-nav {
+    margin-right: 2.2rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .links-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media(max-width: 500px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .links-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
 }
