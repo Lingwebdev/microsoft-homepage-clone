@@ -408,8 +408,12 @@ i {
       display: none;
     }
 
-    .carousel .txt-part {
+    .carousel .txt-part .unlock-txt {
       display: none;
+    }
+
+    .carousel .txt-part .save-txt {
+      margin: 1rem 0;
     }
 
     .xbox .txt-part {
