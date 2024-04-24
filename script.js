@@ -18,6 +18,7 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-menu = document.querySelector('.menu');
-mainNav = document.querySelector('.main-nav');
+const menu = document.querySelector('.menu');
+const mainNav = document.querySelector('.main-nav');
 menu.addEventListener('click', () => mainNav.classList.toggle('active'));
+
