@@ -416,6 +416,10 @@ i {
       margin: 1rem 0;
     }
 
+    .carousel .shop-btn {
+      display: none;
+    }
+
     .xbox .txt-part {
       left: 35%;
     }
